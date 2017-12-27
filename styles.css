@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   color: #333;
   margin: 0;
@@ -33,7 +37,15 @@ html, body {
 }
 
 .play-button {
-  background-image: url('./img/play.svg');
+  background: url('./img/play.svg') center center no-repeat;
+  background-size: 70px 70px;
+}
+
+.play-button.animate {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: shake;
 }
 
 .pause-button {
@@ -61,7 +73,6 @@ html, body {
 
 .name-default,
 .name-progress {
-  box-sizing: border-box;
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 48px;
   font-width: thin;
@@ -215,5 +226,27 @@ html, body {
 @media (min-width: 650px) {
   .name-container-small {
     display: none;
+  }
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  5%, 15% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  10%, 20% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  25% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }

@@ -11,6 +11,7 @@ var getProgress = function() {
 
 var onPlay = function() {
   playButton.classList.add('hidden')
+  playButton.classList.remove('animate')
   pauseButton.classList.remove('hidden')
 
   interval = setInterval(function() {
