@@ -200,6 +200,7 @@ html, body {
   }
 
   .name-default {
+    height: auto;
     font-size: 8vw;
   }
 
