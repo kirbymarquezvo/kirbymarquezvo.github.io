@@ -98,7 +98,7 @@ html, body {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   height: 100%;
   padding: 30px;
