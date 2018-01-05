@@ -27,8 +27,9 @@ html, body {
 
 .name-container-small,
 .player-container {
-  bottom: 0;
+  bottom: 30px;
   display: flex;
+  left: 30px;
   position: absolute;
 }
 
@@ -101,7 +102,6 @@ html, body {
   background: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   height: 100%;
-  padding: 30px;
   width: 100%;
 }
 
